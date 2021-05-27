@@ -1,0 +1,170 @@
+/* ETAPE 1 - Définir toutes les conditions sur la police et pour chaque bloc*/
+@font-face /*charger la police applicable au site */
+{
+	font-family: 'raleway';
+	src: url('Raleway-Italic-VariableFont_wght.ttf'), url('Raleway-VariableFont_wght.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*elements principaux de la page*/
+body
+{
+	font-family: 'Raleway-VariableFont_wgh';
+}
+#bloc-page
+{
+	width: 1200px
+	height : 1200px;
+	margin: auto;
+}
+
+header
+{
+	margin: auto;
+	height: 40%
+}
+#recherche
+{
+	display: flex;
+	flex-wrap: nowrap;
+}
+mark /*paramétrer le champ recherche */
+{
+	background-color: #0065FC;
+	color: white;
+	border: 1px black solid;
+	border-radius: 0px 10px 10px 0px;
+	width: 25px;
+	height: 25px;
+}
+input
+{
+	border: 1px black solid;
+	border-radius: 10px 0px 0px 10px;	
+}
+i /*caractéristiques de l'icone*/
+{
+	background-color: #F2F2F2;
+	border: 1px black solid;
+	border-radius: 10px 10px 10px 10px;	
+	height: 10px;
+}
+div, nav /* mettre le logo et le menu nav sur la même ligne*/
+{
+	display: inline-block;
+}
+nav ul /*structure des ancres*/
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 800px
+}
+nav li /*donne l'écartement entre chaque mot de liste */
+{
+	margin-left: 10px
+}
+nav a
+{
+	font-size: 1em; /*donne la taille des lettres*/
+	text-decoration: none;
+}
+nav a:hover
+{
+	text-decoration: underline;
+	color: red;
+}
+#filtres
+{
+	display: flex;
+}
+
+section
+{
+	display: inline-block;
+	justify-content: space-around;
+	align-items: baseline;
+	margin-right: 10px
+	margin-left: 10px;
+	margin-bottom: 10px;
+	height: : 80%
+}
+#rating
+{
+	text-decoration: none;
+}
+aside
+{
+	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: justify;
+	background-color: #F2F2F2;
+	border: 1px;
+	border-radius: 10px;
+	width: 200px
+	height: 100px;
+	margin: 10px;
+	margin-left: none;
+	padding: 5px;
+	box-shadow: 0px 2px 5px;
+}
+
+#hebergements
+{
+	background-color: #F2F2F2;
+	display: inline-block;
+	flex-direction: line;
+	width: 850px;
+	height: 620px;
+}
+#Populaire
+{
+	background-color: #F2F2F2;
+	display: inline-block;
+	flex-direction: column;
+	width: 320px;
+	height: 616px;
+}
+.flotte
+{
+	float: left;
+}
+#activites
+{
+	display: inline-block;
+	background-color: white
+	width: 1250px;
+	justify-content: space-between;
+	height: 400px;
+	margin-left: none;
+	padding: 20px;
+}
+footer
+{
+	display: inline-block;
+	background-color: #F2F2F2;
+	height: 20%
+	flex-direction: line;
+}
+ul
+{
+	list-style-type: none;
+	margin: none;
+}
+#a_propos
+{
+	margin-left: 2px
+}
+#nos_hebergements
+{
+	margin-left: 300px;
+}
+#notre_assistance
+{
+	margin-left: 330px;
+}
+footer a
+{
+	text-decoration: none;
+}
