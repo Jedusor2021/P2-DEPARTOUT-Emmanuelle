@@ -45,7 +45,14 @@ nav li /*donne l'écartement entre chaque mot de liste */
 {
 	margin-left: 28px
 }
-
+a
+{
+	transition: color 1s;
+}
+a:hover
+{
+	color: green;
+}
 
 #bloc1bis /* Titre et paragraphe sous le logo */
 {
@@ -101,6 +108,7 @@ i
 .zone_recherche
 {
 	border-radius: 0px 10px 10px 0px;
+	border-color: 1px 1px 1px 0px solid lightgrey;
 }
 .champ
 {
