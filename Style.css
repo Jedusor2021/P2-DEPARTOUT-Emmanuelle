@@ -10,7 +10,7 @@
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'raleway';
-	src: url('Raleway-Italic-VariableFont_wght.ttf'), 
+	src: url('Raleway-Italic-VariableFont_wght.ttf'); 
 	font-weight: normal;
 	font-style: italic;
 }
@@ -22,7 +22,7 @@
 		width: 320px;
 	}
 	
-	#bloc1bis
+	#bloctitre
 	{
 		flex-wrap: wrap;
 		font-size: 18px;
@@ -32,7 +32,7 @@
 		margin-top: 5px;
 	}
 
-	#bloc3
+	#blocfiltre
 	{
 		flex-flow: row wrap;
 		justify-content: center;
@@ -82,7 +82,7 @@
 		padding-right: 2px;
 		font-size: 13px;
 	}
-	#bloc4 /* hebergements et les plus populaires */
+	#blochotels /* hebergements et les plus populaires */
 	{
 		display: flex;
 		flex-flow : column wrap;
@@ -129,7 +129,7 @@
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	#bloc6 
+	#blocfooter 
 	{
 		display: flex;
 		flex-flow: column wrap;
@@ -165,7 +165,7 @@ header
 }
 
 /* bloc1 - position logo + menu */
-#bloc1
+#bloclogo
 {
 	display: flex;
 	justify-content: space-between;
@@ -191,7 +191,7 @@ a:hover
 	color: green;
 }
 
-#bloc1bis /* Titre et paragraphe sous le logo */
+#bloctitre /* Titre et paragraphe sous le logo */
 {
 	display: flex;
 	flex-direction: column;
@@ -209,7 +209,7 @@ a:hover
 	margin-bottom: 10px;
 }
 
-#bloc2 /* champs de recherche */
+#blocrecherche /* champs de recherche */
 {
 	display: flex;
 	justify-content: flex-start;
@@ -245,14 +245,14 @@ i
 .zone_recherche
 {
 	border-radius: 0px 10px 10px 0px;
-	border-color: 1px 1px 1px 0px solid lightgrey;
+	border-color: 1px 1px 1px 0px solid #e0e0e0;
 }
 .champ
 {
 	height: 30px;
 }
 
-#bloc3 /* filtres */
+#blocfiltre /* filtres */
 {
 	display: flex;
 	justify-content: space-between;
@@ -287,20 +287,21 @@ i
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px grey solid;
-	border-right: 1px grey solid;
-	border-bottom: 1px grey solid;
-	border-left: none;
+	border-top: 1px #e0e0e0 solid;
+	border-right: 1px #e0e0e0 solid;
+	border-bottom: 1px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
+	margin-left: -18px;
+	padding-left: 28px;
 }
 .fa-band-aid
 {
 	padding-right: 12px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
 	background-color: #DEEBFF;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 50%;
 }
 #famille /* bloc catégorie */
 {
@@ -316,26 +317,28 @@ i
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px grey solid;
-	border-right: 1px grey solid;
-	border-bottom: 1px grey solid;
-	border-left: none;
+	border-top: 1px #e0e0e0 solid;
+	border-right: 1px #e0e0e0 solid;
+	border-bottom: 1px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
+	margin-left: -18px;
+	padding-left: 28px;
 }
 .fa-child
 {
 	padding-right: 12px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
 	background-color: #DEEBFF;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 50%;
 }
 #animaux /* bloc catégorie */
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: center; 
+	align-items: center;
 	border-radius: 10px 10px 10px 10px;
 	width: 260px;
 	font-weight: bold;
@@ -345,20 +348,22 @@ i
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px grey solid;
-	border-right: 1px grey solid;
-	border-bottom: 1px grey solid;
-	border-left: none;
+	border-top: 1px #e0e0e0 solid;
+	border-right: 1px #e0e0e0 solid;
+	border-bottom: 1px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
+	margin-left: -18px;
+	padding-left: 28px;
+
 }
 .fa-dog
 {
 	padding-right: 12px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
 	background-color: #DEEBFF;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 50%;
 }
 #romantique /* bloc catégorie */
 {
@@ -374,20 +379,22 @@ i
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px grey solid;
-	border-right: 1px grey solid;
-	border-bottom: 1px grey solid;
+	border-top: 1px #e0e0e0 solid;
+	border-right: 1px #e0e0e0 solid;
+	border-bottom: 1px #e0e0e0 solid;
 	border-left: none;
 	border-radius: 0px 10px 10px 0px;
+	margin-left: -18px;
+	padding-left: 28px;
 }
 .fa-heart
 {
 	padding-right: 12px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
 	background-color: #DEEBFF;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 50%;
 }
 
 #title_logdisp
@@ -410,7 +417,7 @@ i
 	font-size: 13px;
 }
 
-#bloc4 /* hébergements et les plus populaires*/
+#blochotels /* hébergements et les plus populaires*/
 {
 	display: flex;
 	flex-direction: row;
@@ -600,7 +607,7 @@ img
 	border-radius: 10px 10px 10px 10px;
 }
 
-#bloc5 /*activités à Marseille */
+#blocactivites /*activités à Marseille */
 {
 	display: flex;
 	flex-direction: column;
@@ -611,8 +618,27 @@ img
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	width: 100%;
+}
+.port
+{
+	margin-left: 15px;
+	margin-right: 18px;
+}
+.iles
+{
+	margin-left: 18px;
+	margin-right: 18px;
+}
+.parc
+{
+	margin-left: 18px;
+	margin-right: 18px;
+}
+.dame
+{
+	margin-left: 18px;
+	margin-right: 15px;
 }
 aside
 {
@@ -624,7 +650,7 @@ aside
 	margin-bottom: 30px;
 }
 
-#bloc6
+#blocfooter
 {
 	display: flex;
 	flex-direction: row;
