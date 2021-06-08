@@ -17,9 +17,9 @@
 
 @media all and (max-device-width: 480px)
 {
-	#bloc-page
+	#bloc_page
 	{
-		width: 320px;
+		width: auto;
 	}
 	
 	#bloctitre
@@ -32,78 +32,167 @@
 		margin-top: 5px;
 	}
 
+	nav ul
+	{
+		flex-wrap: wrap-reverse;
+		margin-right: 20%;
+	}
+
+
 	#blocfiltre
 	{
 		flex-flow: row wrap;
-		justify-content: center;
-		margin-right: 15px;
+		width: 110px;
 	}
 	#cat
 	{
-		width: 40px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		width: 30px;
+		margin-top: 3px;
+		margin-bottom: 3px;
 	}
 	.title_eco
 	{
-		font-size: 18px;
+		font-size: 13px;
 	}
 	#famille
 	{
-		width: 40px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		width: 30px;
+		margin-top: 3px;
+		margin-bottom: 3px;
 	}
 	.title_fam
 	{
-		font-size: 18px;
+		font-size: 13px;
 	}
 	#romantique
 	{
-		width: 40px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		width: 30px;
+		margin-bottom :3px;
+		margin-top: 3px;
 	}
 	#animaux
 	{
-		width: 40px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		flex-flow: row;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+	.title_an
+	{
+		font-size: 8px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+
 	}
 	#title_logdisp
 	{
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: left;
-		margin-right: none;
+		flex-flow: row;
+		width: 300px;
 	}
 	.titlelog
 	{
-		padding-right: 2px;
+		padding-left: 2px;
 		font-size: 13px;
 	}
 	#blochotels /* hebergements et les plus populaires */
 	{
-		display: flex;
 		flex-flow : column wrap;
-		background-color: white;
+		margin-left: 10px;
 	}
 	#hebergements_Marseille
 	{
-		flex-flow : column wrap;
+		flex-flow: column;
+		margin-left: 35px;
 		background-color: white;
-		margin-left: 5px;
-		margin-right: 5px;
+	}
+	.intitule
+	{
+		margin-right: 400px;
+		margin-left: 15px;
+		width: 200px;
 	}
 	#hotels_images
 	{
-		flex-direction: column;
-		box-shadow:0px 0px 2px 2px lightgrey;
+		background-color: white;
+		
 	}
+	.image1
+	{
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+	}
+	.image2
+	{
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+	}
+	.image3
+	{
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+	}
+	.image5
+	{
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+	}
+	.image6
+	{
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+	}
+	.image7
+	{
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+	}
+	#nav
+	{
+		background-color: none;
+		font-size: 13px;
+		margin-left: 10px;
+	}
+	#populaire
+	{
+		flex-flow: row;
+		background-color: #F2F2F2;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#title_logo
+	{
+		flex-flow: row;
+	}
+	.text
+	{
+		width: 500px;
+		margin-right: 20px;
+	}
+	.chart
+	{
+		margin-left: 120px;
+	}
+	#eau
+	{	
+		flex-direction: row;
+		box-shadow: 0px 0px 2px 2px #e0e0e0;
+		background-color: white;
+		width: 100%;
+	}
+	.im img
+	{
+		width: 100px;
+		height: 110px;
+		border-radius: 10px 0px 0px 10px;
+	}
+	.legende p
+	{
+		width: 200px;
+	}
+
 	#image_activites /* bloc 5 - activités à Marseille */
 	{
 		flex-flow: column wrap;
-		margin-left: 20px;
+		margin-left: 10px;
 		margin-right: 5px;
 	}
 	#title_act 
@@ -129,7 +218,7 @@
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	#blocfooter 
+	#blocfooter  /* Bloc 6 footer */
 	{
 		display: flex;
 		flex-flow: column wrap;
