@@ -24,7 +24,7 @@
 	#bloclogo
 	{
 		flex-flow: row wrap;
-		width: 260px;
+		width: 90%;
 	}
 	.logo:nth-child(1)
 	{
@@ -35,9 +35,33 @@
 	{
 		order: 3;
 		flex: 4;
-		border-bottom: 3px solid #F2F2F2;
+		margin-left: 0px;
 	}
-
+	.ancre_heb
+	{
+		box-sizing: content-box;
+		display: flex;
+		width: 50%;
+		color: #0065FC;
+		padding-left: 0px;
+		padding-right: 22px;
+		position: static;
+		z-index: auto;
+		border-bottom: 5px solid #0065FC;
+	}
+	.ancre_act
+	{
+		box-sizing: content-box;
+		display: flex;
+		width: 50%;
+		color: #0065FC;
+		padding-left: 0px;
+		padding-right: 22px;
+		position: static;
+		z-index: auto;
+		border-bottom: 5px solid #e0e0e0;
+	}
+	
 	.inscrire:nth-child(3)
 	{
 		order: 2;
@@ -57,28 +81,29 @@
 	{
 		margin-top: 5px;
 	}
-
+	.recherche
+	{
+		text-decoration: fa fa-search;
+	}
 	
 	#blocfiltre
 	{
-		flex-flow: row wrap;
-		width: 110px;
+		flex-wrap: wrap;
+		width: 60%;
 	}
-	#cat
+	#filtres
 	{
-		width: 30px;
-		margin-top: 3px;
-		margin-bottom: 3px;
-	}
-	.title_eco
-	{
-		font-size: 13px;
+		margin-right: 80%
+		margin-bottom: 2px;
+		margin-left: 2px;
 	}
 	#famille
 	{
-		width: 30px;
+		justify-content: flex-start;
+		font-weight: bold;
+		margin-left: 2px;
+		margin-bottom :3px;
 		margin-top: 3px;
-		margin-bottom: 3px;
 	}
 	.title_fam
 	{
@@ -92,9 +117,9 @@
 	}
 	#animaux
 	{
-		flex-flow: row;
 		margin-top: 3px;
 		margin-bottom: 3px;
+		width: 600px;
 	}
 	.title_an
 	{
@@ -122,8 +147,8 @@
 	{
 		flex-flow: column;
 		background-color: white;
-		margin-left: 45px;
 		order: 2;
+		width: 100%;
 	}
 	h4
 	{
@@ -134,38 +159,17 @@
 	#hotels_images
 	{
 		background-color: white;
-		
+		width: 100%;
+
 	}
-	.image1
+	.image
 	{
 		box-shadow: 0px 0px 2px 2px #e0e0e0;
 		background-color: white;
+		margin-left: 5px;
+		width: 80%;
 	}
-	.image2
-	{
-		box-shadow: 0px 0px 2px 2px #e0e0e0;
-		background-color: white;
-	}
-	.image3
-	{
-		box-shadow: 0px 0px 2px 2px #e0e0e0;
-		background-color: white;
-	}
-	.image5
-	{
-		box-shadow: 0px 0px 2px 2px #e0e0e0;
-		background-color: white;
-	}
-	.image6
-	{
-		box-shadow: 0px 0px 2px 2px #e0e0e0;
-		background-color: white;
-	}
-	.image7
-	{
-		box-shadow: 0px 0px 2px 2px #e0e0e0;
-		background-color: white;
-	}
+
 	#nav
 	{
 		background-color: none;
@@ -189,12 +193,7 @@
 		flex-flow: row;
 		font-size: 16px;
 	}
-	#eau
-	{
-		padding-right: 2px;
-		padding-left: 1px;
-		width: 80%;
-	}
+	
 	.chart
 	{
 		margin-left: 8px;
@@ -206,10 +205,14 @@
 		height: 120px;
 		border-radius: 10px 0px 0px 10px;
 	}
+	#images_pop
+	{
+		margin-left: 10px;
+	}
 	.legende p
 	{
 		width: 230px;
-		padding-right: 2px;
+		padding-right: 5px;
 	}
 
 	#image_activites /* bloc 5 - activités à Marseille */
@@ -261,7 +264,6 @@
 		padding-left: 15px;
 	}
 }
-
 /* MISE EN FORME POUR LAPTOP */
 
 body
@@ -281,17 +283,27 @@ header
 {
 	display: flex;
 	flex-direction: row;
+	width: 100%;
+	
 }
 .logo
 {
 	display: flex;
 	flex-direction: row;
 }
-#menu
+.menu
 {
 	display: flex;
 	flex-direction: row;
-	margin-left: 60%;
+	margin-left: 70%
+	
+}
+
+.inscrire
+{
+	display: flex;
+	flex-direction: row;
+	
 }
 nav ul /*structure des ancres*/
 {
@@ -300,6 +312,8 @@ nav ul /*structure des ancres*/
 	flex-direction: line;
 	font-size: 13px;
 	font-weight: bold;
+	justify-content: flex-end;
+	padding-left: 0px;
 }
 nav li /*donne l'écartement entre chaque mot de liste */
 {
@@ -382,6 +396,7 @@ i
 	align-items: center;
 	margin-right: 35%;
 	margin-bottom: 20px;
+	width: 50%;
 }
 .fa
 {
@@ -394,6 +409,7 @@ i
 {
 	padding: 10px;
 	font-weight: bold;
+	margin-right: 10px;
 }
 
 #cat /* bloc catégorie */
@@ -404,15 +420,16 @@ i
 	border-radius: 10px 10px 10px 10px;
 	width: 160px;
 	font-weight: bold;
+	margin-right: 2px;
 }
 .title_eco /*class du bloc cat */
 {
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px #e0e0e0 solid;
-	border-right: 1px #e0e0e0 solid;
-	border-bottom: 1px #e0e0e0 solid;
+	border-top: 2px #e0e0e0 solid;
+	border-right: 2px #e0e0e0 solid;
+	border-bottom: 2px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -18px;
 	padding-left: 28px;
@@ -430,19 +447,20 @@ i
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	border-radius: 10px 10px 10px 10px;
 	width: 160px;
 	font-weight: bold;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 .title_fam /*class du bloc cat */
 {
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px #e0e0e0 solid;
-	border-right: 1px #e0e0e0 solid;
-	border-bottom: 1px #e0e0e0 solid;
+	border-top: 2px #e0e0e0 solid;
+	border-right: 2px #e0e0e0 solid;
+	border-bottom: 2px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -18px;
 	padding-left: 28px;
@@ -460,20 +478,18 @@ i
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: center; 
-	align-items: center;
 	border-radius: 10px 10px 10px 10px;
-	width: 260px;
 	font-weight: bold;
+	width: 50%;
 }
 .title_an /*class du bloc cat */
 {
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px #e0e0e0 solid;
-	border-right: 1px #e0e0e0 solid;
-	border-bottom: 1px #e0e0e0 solid;
+	border-top: 2px #e0e0e0 solid;
+	border-right: 2px #e0e0e0 solid;
+	border-bottom: 2px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -18px;
 	padding-left: 28px;
@@ -482,8 +498,8 @@ i
 .fa-dog
 {
 	padding-right: 12px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	padding-left: 12px;
 	background-color: #DEEBFF;
 	border-radius: 50%;
@@ -492,20 +508,19 @@ i
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	border-radius: 10px 10px 10px 10px;
 	width: 160px;
 	font-weight: bold;
+	margin-right: 2px;
 }
 .title_rom /*class du bloc cat */
 {
 	padding: 10px;
 	font-weight: bold;
 	font-size: 15px;
-	border-top: 1px #e0e0e0 solid;
-	border-right: 1px #e0e0e0 solid;
-	border-bottom: 1px #e0e0e0 solid;
-	border-left: none;
+	border-top: 2px #e0e0e0 solid;
+	border-right: 2px #e0e0e0 solid;
+	border-bottom: 2px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -18px;
 	padding-left: 28px;
@@ -558,7 +573,7 @@ i
 }
 .intitule
 {
-	margin-left: 35px;
+	margin-left: 25px;
 }
 #hotels_images
 {
@@ -577,7 +592,7 @@ img
 {
 	border-radius: 10px 10px 0px 0px;
 }
-.image1
+.image
 {
 	margin-left: 5px;
 	margin-right: 5px;
@@ -588,56 +603,6 @@ img
 	background-color: white;
 }
 
-.image2
-{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 12px;
-	margin-bottom: 10px;
-	border-radius: 10px 10px 10px 10px;
-	padding: 5px;
-	background-color: white;
-}
-.image3
-{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 12px;
-	margin-bottom: 10px;
-	border-radius: 10px 10px 10px 10px;
-	padding: 5px;
-	background-color: white;
-}
-.image5
-{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10px 10px 10px 10px;
-	padding: 5px;
-	background-color: white;
-}
-.image6
-{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10px 10px 10px 10px;
-	padding: 5px;
-	background-color: white;
-}
-.image7
-{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10px 10px 10px 10px;
-	padding: 5px;
-	background-color: white;
-}
 #nav
 {
 	margin-top: 15px;
@@ -667,15 +632,15 @@ img
 }
 .text
 {
-	margin-left: 35px;
+	margin-left: 20px;
 }
 #images_pop
 {
 	display: flex;
 	flex-direction: column;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	margin-left: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	
 }
 .flotte
 {
@@ -686,9 +651,9 @@ img
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	width: 80%;
+	width: 90%;
 	height: 25%;
-	margin-left: 20px;
+	margin-left: 5px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	border-radius: 10px 10px 10px 10px;
@@ -708,9 +673,9 @@ img
 	display: flex;
 	background-color: white;
 	flex-direction: row;
-	width: 80%;
+	width: 90%;
 	height: 25%;
-	margin-left: 20px;
+	margin-left: 5px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	border-radius: 10px 10px 10px 10px;
@@ -720,9 +685,9 @@ img
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	width: 80%;
+	width: 90%;
 	height: 25%;
-	margin-left: 20px;
+	margin-left: 5px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	padding-top: 2px;
@@ -747,21 +712,25 @@ img
 {
 	margin-left: 15px;
 	margin-right: 18px;
+	
 }
 .iles
 {
 	margin-left: 18px;
 	margin-right: 18px;
+	
 }
 .parc
 {
 	margin-left: 18px;
 	margin-right: 18px;
+	
 }
 .dame
 {
 	margin-left: 18px;
 	margin-right: 15px;
+	
 }
 aside
 {
