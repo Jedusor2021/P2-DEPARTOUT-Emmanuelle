@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="style.css" />
 		<title>Reservia</title>
 		<script src="https://kit.fontawesome.com/a47b4b2a04.js" crossorigin="anonymous"></script>
@@ -29,7 +30,10 @@
 			<div id="blocrecherche">
 				<div class="icone"><form method="post" action="traitement.php"><i class="fas fa-map-marker-alt"></i></form></div>	
 				<div class="zone_recherche"><input class="champ" type="text" /></div>
-				<div class="recherche">Rechercher</div>
+				<div id="recherche">
+						<div class="text_recherche">Rechercher</div>
+						<div class="icone_recherche"><form method="post" action="traitement.php"><i class="fas fa-search"></i></form></div>
+				</div>
 			</div>
 
 			<div id="blocfiltre">
