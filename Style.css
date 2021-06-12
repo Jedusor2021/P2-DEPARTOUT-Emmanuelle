@@ -88,15 +88,16 @@
 	
 	#blocfiltre
 	{
-		flex-wrap: wrap;
-		width: 60%;
+		flex-flow: row wrap;
+		justify-content: left;
 	}
 	#filtres
 	{
-		margin-right: 80%
 		margin-bottom: 2px;
 		margin-left: 2px;
+		margin-right: 300px;
 	}
+	
 	#famille
 	{
 		justify-content: flex-start;
@@ -111,7 +112,7 @@
 	}
 	#romantique
 	{
-		width: 30px;
+		width: 50px;
 		margin-bottom :3px;
 		margin-top: 3px;
 	}
@@ -119,11 +120,12 @@
 	{
 		margin-top: 3px;
 		margin-bottom: 3px;
-		width: 600px;
+		width: 700px;
+
 	}
 	.title_an
 	{
-		font-size: 8px;
+		font-size: 7px;
 		padding-top: 2px;
 		padding-bottom: 2px;
 
@@ -394,9 +396,9 @@ i
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-right: 35%;
+	margin-right: 5%;
 	margin-bottom: 20px;
-	width: 50%;
+	width: 55%;
 }
 .fa
 {
@@ -405,11 +407,12 @@ i
 	font-size: 90%;
 	padding: 2px;
 }
-.Filtres
+#Filtres
 {
 	padding: 10px;
+	margin-top: 20px;
 	font-weight: bold;
-	margin-right: 10px;
+	margin-right: 15px;
 }
 
 #cat /* bloc catégorie */
@@ -418,9 +421,9 @@ i
 	flex-direction: row;
 	justify-content: center;
 	border-radius: 10px 10px 10px 10px;
-	width: 160px;
 	font-weight: bold;
 	margin-right: 2px;
+	margin-left: 2px;
 }
 .title_eco /*class du bloc cat */
 {
@@ -448,14 +451,13 @@ i
 	display: flex;
 	flex-direction: row;
 	border-radius: 10px 10px 10px 10px;
-	width: 160px;
 	font-weight: bold;
 	margin-left: 2px;
 	margin-right: 2px;
 }
 .title_fam /*class du bloc cat */
 {
-	padding: 10px;
+	padding: 5px;
 	font-weight: bold;
 	font-size: 15px;
 	border-top: 2px #e0e0e0 solid;
@@ -480,7 +482,7 @@ i
 	flex-direction: row;
 	border-radius: 10px 10px 10px 10px;
 	font-weight: bold;
-	width: 50%;
+	
 }
 .title_an /*class du bloc cat */
 {
@@ -492,7 +494,7 @@ i
 	border-bottom: 2px #e0e0e0 solid;
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -18px;
-	padding-left: 28px;
+	padding-left: 20px;
 
 }
 .fa-dog
@@ -509,7 +511,6 @@ i
 	display: flex;
 	flex-direction: row;
 	border-radius: 10px 10px 10px 10px;
-	width: 160px;
 	font-weight: bold;
 	margin-right: 2px;
 }
