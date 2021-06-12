@@ -81,11 +81,37 @@
 	{
 		margin-top: 5px;
 	}
-	.recherche
+	#recherche
 	{
-		text-decoration: fa fa-search;
+		display: flex;
+		justify-content: flex-start;
+		height: 25px;
 	}
-	
+	.icone_recherche:nth-child(2)
+	{
+		z-index: 122;
+		background-color: #0065FC;
+		border-radius: 0px 10px 10px 0px;
+		width: 35px;
+		height: 25px;
+		padding-left: 10px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		order: 1;
+	}	
+	i
+	{
+		padding: 4px;
+		font-color: black;
+	}
+
+	.text_recherche:nth-child(1)
+	{
+		z-index: 121;
+		visibility: hidden;
+		order: 2;
+
+	}
 	#blocfiltre
 	{
 		flex-flow: row wrap;
@@ -95,7 +121,7 @@
 	{
 		margin-bottom: 2px;
 		margin-left: 2px;
-		margin-right: 300px;
+		
 	}
 	
 	#famille
@@ -154,9 +180,8 @@
 	}
 	h4
 	{
-		width: 200px;
-		margin-right: 45%;
-		font-size: 16px;
+		
+		font-size: 14px;
 	}
 	#hotels_images
 	{
@@ -220,8 +245,7 @@
 	#image_activites /* bloc 5 - activités à Marseille */
 	{
 		flex-flow: column wrap;
-		margin-left: 10px;
-		margin-right: 5px;
+		
 	}
 	#title_act 
 	{
@@ -356,7 +380,8 @@ a:hover
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-.recherche
+
+.text_recherche
 {
 	border-radius: 0px 10px 10px 0px;
 	background-color: #0065FC;
@@ -369,6 +394,7 @@ a:hover
 	font-weight: bold;
 	font-size: 12px;
 }
+
 .icone
 {
 	background-color: #F2F2F2;
@@ -382,6 +408,16 @@ i
 	font-color: black;
 }
 .zone_recherche
+{
+	border-radius: 0px 10px 10px 0px;
+	border-color: 1px solid #e0e0e0;
+}
+i
+{
+	padding: 4px;
+	font-color: black;
+}
+.zone_recherche /* champ de recherche à remplir*/
 {
 	border-radius: 0px 10px 10px 0px;
 	border-color: 1px solid #e0e0e0;
@@ -539,8 +575,8 @@ i
 #title_logdisp
 {
 	display: flex;
-	justify-content: space-between;
-	margin-right: 73%;
+	justify-content: flex-start;
+	
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
