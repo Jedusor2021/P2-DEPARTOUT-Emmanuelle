@@ -68,10 +68,7 @@
 		flex: 1;
 	}
 		
-	#blocrecherche
-	{
-		margin-left: 5px;
-	}
+	
 	#bloctitre
 	{
 		flex-wrap: wrap;
@@ -238,7 +235,7 @@
 	}
 	.legende p
 	{
-		width: 230px;
+		
 		padding-right: 5px;
 	}
 
@@ -345,15 +342,22 @@ nav li /*donne l'écartement entre chaque mot de liste */
 {
 	margin-left: 28px
 }
-a
+.ancre_heb a
 {
 	transition: color 1s;
 }
-a:hover
+.ancre_heb a:hover
 {
-	color: green;
+	color: red;
 }
-
+.ancre_act a
+{
+	transition: color 1s;
+}
+.ancre_act a:hover
+{
+	color: red;
+}
 #bloctitre /* Titre et paragraphe sous le logo */
 {
 	display: flex;
@@ -389,7 +393,6 @@ a:hover
 	padding-bottom: 10px;
 	text-align: center;
 	align-items: center;
-	width: 100px;
 	color: white;
 	font-weight: bold;
 	font-size: 12px;
@@ -455,6 +458,7 @@ i
 	font-weight: bold;
 	margin-right: 2px;
 	margin-left: 2px;
+	
 }
 .title_eco /*class du bloc cat */
 {
@@ -467,6 +471,7 @@ i
 	border-radius: 0px 10px 10px 0px;
 	margin-left: -18px;
 	padding-left: 28px;
+	
 }
 .fa-band-aid
 {
@@ -477,6 +482,10 @@ i
 	background-color: #DEEBFF;
 	border-radius: 50%;
 }
+#cat:hover
+{
+	background-color: lightyellow;
+}
 #famille /* bloc catégorie */
 {
 	display: flex;
@@ -485,6 +494,10 @@ i
 	font-weight: bold;
 	margin-left: 2px;
 	margin-right: 2px;
+}
+#famille:hover
+{
+	background-color: lightyellow;
 }
 .title_fam /*class du bloc cat */
 {
@@ -515,6 +528,10 @@ i
 	font-weight: bold;
 	
 }
+#animaux:hover
+{
+	background-color: lightyellow;
+}
 .title_an /*class du bloc cat */
 {
 	padding: 10px;
@@ -544,6 +561,11 @@ i
 	border-radius: 10px 10px 10px 10px;
 	font-weight: bold;
 	margin-right: 2px;
+}
+
+#romantique:hover
+{
+	background-color: lightyellow;
 }
 .title_rom /*class du bloc cat */
 {
