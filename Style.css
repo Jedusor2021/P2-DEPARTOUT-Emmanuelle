@@ -15,6 +15,524 @@
 	font-style: italic;
 }
 
+
+/* MISE EN FORME POUR LAPTOP */
+
+body
+{
+	font-family:'Raleway';
+	font-style: normal;
+}
+
+
+header
+{
+	height: 35%
+}
+
+/* bloc1 - position logo + menu */
+#bloclogo
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	
+}
+.logo
+{
+	display: flex;
+	flex-direction: row;
+}
+.menu
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	
+}
+.ancre_heb a
+{
+	color: #0065FC;
+}
+.ancre_act a
+{
+	color: black;
+}
+.inscrire
+{
+	display: flex;
+	flex-direction: row;
+	color: #0065FC;
+	
+}
+nav ul /*structure des ancres*/
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: line;
+	font-size: 13px;
+	font-weight: bold;
+	justify-content: flex-end;
+	padding-left: 0px;
+}
+nav li /*donne l'écartement entre chaque mot de liste */
+{
+	margin-left: 28px
+}
+.ancre_heb a
+{
+	transition: color 1s;
+}
+.ancre_heb a:hover
+{
+	color: red;
+}
+.ancre_act a
+{
+	transition: color 1s;
+}
+.ancre_act a:hover
+{
+	color: red;
+}
+#bloctitre /* Titre et paragraphe sous le logo */
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.title
+{
+	font-weight: bold;
+	font-size: 1,7em;
+}
+.soustitre
+{
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+#blocrecherche /* champs de recherche */
+{
+	display: flex;
+	justify-content: flex-start;
+	margin-right: 70%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.text_recherche
+{
+	border-radius: 0px 10px 10px 0px;
+	background-color: #0065FC;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.icone
+{
+	background-color: #F2F2F2;
+	border-radius: 10px 0px 0px 10px;
+	width: 33px;
+	height: 33px;
+	padding-left: 10px;
+	padding-top: 3px;
+}	
+i
+{
+	padding: 4px;
+	font-color: black;
+}
+.zone_recherche
+{
+	border-radius: 0px 10px 10px 0px;
+	border-color: 1px solid #e0e0e0;
+}
+.icone_recherche
+{
+	color: white;
+}
+.champ
+{
+	height: 29px;
+}
+
+#blocfiltre /* filtres */
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	width: 55%;
+}
+.fa
+{
+	color: #0065FC;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 90%;
+	padding: 2px;
+}
+#Filtres
+{
+	padding: 10px;
+	margin-top: 15px;
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+#champs_filtre /* bloc catégorie */
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-radius: 10px 10px 10px 10px;
+	font-weight: bold;
+	margin-right: 2px;
+	margin-left: 2px;
+	
+}
+.title_filtre /*class du bloc cat */
+{
+	padding: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	border-top: 2px #e0e0e0 solid;
+	border-right: 2px #e0e0e0 solid;
+	border-bottom: 2px #e0e0e0 solid;
+	border-radius: 0px 10px 10px 0px;
+	margin-left: -18px;
+	padding-left: 28px;
+	
+}
+.fa-band-aid
+{
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+#champs_filtre:hover
+{
+	background-color: lightyellow;
+}
+
+.fa-child
+{
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+
+.fa-dog
+{
+	padding-right: 12px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 12px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+
+.fa-heart
+{
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+
+#title_logdisp
+{
+	display: flex;
+	
+	align-items: center;
+	width: 45%;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.fa fa-info-circle
+{
+	background-color: white;
+	border-radius: 50%;
+	margin-right: 5px;
+	border-style: 1px solid grey;
+}
+fa-info-circle
+{
+	color: #0065FC;
+}
+.titlelog
+{
+	font-size: 13px;
+	padding-left: 5px;
+}
+
+/* REDACTION NOUVEAU BLOC : BLOC_CENTRAL*/
+
+
+#bloc_central 
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 42%;
+}
+#hebergements
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	width: 70%;
+	height: 52%;
+	border-radius: 10px 10px 10px 10px;
+}
+#title
+{
+	margin-left: 25px;
+	font-weight: bold;
+}
+#photo
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 10px;
+	width: 95%;
+}
+#image
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: top;
+	border-radius: 10px 10px 10px 10px;
+	background-color: white;
+	width: 30%
+}
+#image img
+{
+	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
+	width: 96%;
+	height: 140px;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+#legende
+{
+	justify-content: space-between;
+	align-items: baseline;
+}
+#image a
+{
+	text-decoration: none;
+}
+h4 
+{
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 1px;
+	padding-left: 3px;
+}
+h6
+{
+	margin-left: 25px;
+	margin-top: 10px;
+}
+p
+{
+	color: black;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-left: 3px;
+	font-size: 10px;
+}
+.star
+{
+	font-size: 11px;
+}
+#populaire /* CONTAINER DROIT */
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	width: 28%;
+	border-radius: 10px 0px 0px 10px;
+	margin-left: 20px;
+}
+#title
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#title i
+{
+	color: black;
+	font-size: 25px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+#photos
+{
+	flex-flow: row;
+	width: 85%;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#photo_pop
+{
+	width: 35%;
+}
+#photo_pop img
+{
+	width: 100%;
+	height: 140px;
+	border-radius: 10px 0px 0px 10px;
+}
+.flotte
+{
+	float: left;
+	margin-bottom: 2px;
+}
+#photos a
+{
+	text-decoration: none;
+}
+#legende
+{
+	width: 70%;
+}
+#legende_pop
+{
+	margin-top: 15px;
+}
+.stars
+{
+	margin-top: 65px;
+	font-size: 11px;
+}
+
+
+#blocactivites /*activités à Marseille */
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 100%
+	height: 40%;
+}
+#vues_activites /* Bloc contenant les vues de Marseille*/
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+#vue /* bloc inclus dans vues_activités et contenant les deux gdes images*/
+{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 22%;
+	object-fit: cover;
+}
+.vue_gde
+{
+	box-shadow: 2px 2px 2px 2px lightgrey;
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 10px;
+}
+.vue_gde img
+{
+	width: 100%;
+	height: 268px;
+	border-radius: 10px 10px 0px 0px;
+}
+#double_vue /* Bloc inclus dans vues_activitées et contenant les 4 petites images */
+{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 22%;
+	object-fit: cover;
+}
+.ptte_vue
+{
+	box-shadow: 2px 2px 2px 2px lightgrey;
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 20px;
+}
+
+.ptte_vue img
+{
+	width: 100%;
+	height: 90px;
+	border-radius: 10px 10px 0px 0px;
+}
+h5
+{
+	padding-left: 5px;
+}
+
+
+#blocfooter
+{
+	display: flex;
+	flex-direction: row;
+	background-color: #F2F2F2;
+	justify-content: space-between;
+	margin-top: 15px;
+	height: 20%;
+}
+.assist
+{
+	margin-right: 20%;
+	margin-top: 15px;
+	list-style-type: none;
+	font-size: 12px;
+}
+.Nos_heb
+{
+	list-style-type: none;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.a_propos
+{
+	font-size: 12px;
+	list-style-type: none;
+	margin-top: 15px;
+}
+
+
+/* CODE POUR LA VERSION IPHONE*/
+
 @media all and (max-device-width: 480px)
 {
 	#bloc_page
@@ -104,9 +622,9 @@
 
 	.text_recherche:nth-child(1)
 	{
-		order: 2;
 		z-index: 121;
 		visibility: hidden;
+		order: 2;
 
 	}
 	#blocfiltre
@@ -121,7 +639,7 @@
 		
 	}
 	
-	#famille
+	#champs_filtre
 	{
 		justify-content: flex-start;
 		font-weight: bold;
@@ -129,30 +647,11 @@
 		margin-bottom :3px;
 		margin-top: 3px;
 	}
-	.title_fam
+	.title_filtre
 	{
 		font-size: 13px;
 	}
-	#romantique
-	{
-		width: 50px;
-		margin-bottom :3px;
-		margin-top: 3px;
-	}
-	#animaux
-	{
-		margin-top: 3px;
-		margin-bottom: 3px;
-		width: 700px;
-
-	}
-	.title_an
-	{
-		font-size: 7px;
-		padding-top: 2px;
-		padding-bottom: 2px;
-
-	}
+	
 	#title_logdisp
 	{
 		flex-flow: row;
@@ -179,6 +678,7 @@
 	{
 		
 		font-size: 14px;
+		color: black;
 	}
 	#hotels_images
 	{
@@ -242,7 +742,8 @@
 	#image_activites /* bloc 5 - activités à Marseille */
 	{
 		flex-flow: column wrap;
-		
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 	#title_act 
 	{
@@ -253,20 +754,14 @@
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	.port img
+	.im_activites img
 	{
-		width: 260px;
+		padding-left: 10px;
+		padding-right: 10px;
 		height: 140px;
-		padding-left: 0px;
-		padding-right: 0px;
+		width: 95%;
 	}
-	.parc img
-	{
-		width: 260px;
-		height: 140px;	
-		padding-left: 0px;
-		padding-right: 0px;
-	}
+	
 	#blocfooter  /* Bloc 6 footer */
 	{
 		display: flex;
@@ -286,537 +781,4 @@
 	{
 		padding-left: 15px;
 	}
-}
-/* MISE EN FORME POUR LAPTOP */
-
-body
-{
-	font-family:'Raleway';
-	font-style: normal;
-}
-
-
-header
-{
-	height: 35%
-}
-
-/* bloc1 - position logo + menu */
-#bloclogo
-{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	
-}
-.logo
-{
-	display: flex;
-	flex-direction: row;
-}
-.menu
-{
-	display: flex;
-	flex-direction: row;
-	margin-left: 70%
-	
-}
-
-.inscrire
-{
-	display: flex;
-	flex-direction: row;
-	
-}
-nav ul /*structure des ancres*/
-{
-	list-style-type: none;
-	display: flex;
-	flex-direction: line;
-	font-size: 13px;
-	font-weight: bold;
-	justify-content: flex-end;
-	padding-left: 0px;
-}
-nav li /*donne l'écartement entre chaque mot de liste */
-{
-	margin-left: 28px
-}
-.ancre_heb a
-{
-	transition: color 1s;
-}
-.ancre_heb a:hover
-{
-	color: red;
-}
-.ancre_act a
-{
-	transition: color 1s;
-}
-.ancre_act a:hover
-{
-	color: red;
-}
-#bloctitre /* Titre et paragraphe sous le logo */
-{
-	display: flex;
-	flex-direction: column;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.title
-{
-	font-weight: bold;
-	font-size: 1,7em;
-}
-.soustitre
-{
-	font-size: 13px;
-	margin-bottom: 10px;
-}
-
-#blocrecherche /* champs de recherche */
-{
-	display: flex;
-	justify-content: flex-start;
-	margin-right: 70%;
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
-
-.text_recherche
-{
-	border-radius: 0px 10px 10px 0px;
-	background-color: #0065FC;
-	padding-top:10px;
-	padding-bottom: 10px;
-	text-align: center;
-	align-items: center;
-	color: white;
-	font-weight: bold;
-	font-size: 12px;
-}
-
-.icone
-{
-	background-color: #F2F2F2;
-	border-radius: 10px 0px 0px 10px;
-	width: 35px;
-	height: 35px;
-	padding-left: 10px;
-}	
-i
-{
-	padding: 4px;
-	font-color: black;
-}
-.zone_recherche
-{
-	border-radius: 0px 10px 10px 0px;
-	border-color: 1px solid #e0e0e0;
-}
-.icone_recherche
-{
-	color: white;
-}
-.champ
-{
-	height: 30px;
-}
-
-#blocfiltre /* filtres */
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-right: 5%;
-	margin-bottom: 20px;
-	width: 55%;
-}
-.fa
-{
-	color: #0065FC;
-	border-radius: 10px 10px 10px 10px;
-	font-size: 90%;
-	padding: 2px;
-}
-#Filtres
-{
-	padding: 10px;
-	margin-top: 20px;
-	font-weight: bold;
-	margin-right: 15px;
-}
-
-#cat /* bloc catégorie */
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	border-radius: 10px 10px 10px 10px;
-	font-weight: bold;
-	margin-right: 2px;
-	margin-left: 2px;
-	
-}
-.title_eco /*class du bloc cat */
-{
-	padding: 10px;
-	font-weight: bold;
-	font-size: 15px;
-	border-top: 2px #e0e0e0 solid;
-	border-right: 2px #e0e0e0 solid;
-	border-bottom: 2px #e0e0e0 solid;
-	border-radius: 0px 10px 10px 0px;
-	margin-left: -18px;
-	padding-left: 28px;
-	
-}
-.fa-band-aid
-{
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 12px;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-}
-#cat:hover
-{
-	background-color: lightyellow;
-}
-#famille /* bloc catégorie */
-{
-	display: flex;
-	flex-direction: row;
-	border-radius: 10px 10px 10px 10px;
-	font-weight: bold;
-	margin-left: 2px;
-	margin-right: 2px;
-}
-#famille:hover
-{
-	background-color: lightyellow;
-}
-.title_fam /*class du bloc cat */
-{
-	padding: 5px;
-	font-weight: bold;
-	font-size: 15px;
-	border-top: 2px #e0e0e0 solid;
-	border-right: 2px #e0e0e0 solid;
-	border-bottom: 2px #e0e0e0 solid;
-	border-radius: 0px 10px 10px 0px;
-	margin-left: -18px;
-	padding-left: 28px;
-}
-.fa-child
-{
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 12px;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-}
-#animaux /* bloc catégorie */
-{
-	display: flex;
-	flex-direction: row;
-	border-radius: 10px 10px 10px 10px;
-	font-weight: bold;
-	
-}
-#animaux:hover
-{
-	background-color: lightyellow;
-}
-.title_an /*class du bloc cat */
-{
-	padding: 10px;
-	font-weight: bold;
-	font-size: 15px;
-	border-top: 2px #e0e0e0 solid;
-	border-right: 2px #e0e0e0 solid;
-	border-bottom: 2px #e0e0e0 solid;
-	border-radius: 0px 10px 10px 0px;
-	margin-left: -18px;
-	padding-left: 20px;
-
-}
-.fa-dog
-{
-	padding-right: 12px;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-left: 12px;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-}
-#romantique /* bloc catégorie */
-{
-	display: flex;
-	flex-direction: row;
-	border-radius: 10px 10px 10px 10px;
-	font-weight: bold;
-	margin-right: 2px;
-}
-
-#romantique:hover
-{
-	background-color: lightyellow;
-}
-.title_rom /*class du bloc cat */
-{
-	padding: 10px;
-	font-weight: bold;
-	font-size: 15px;
-	border-top: 2px #e0e0e0 solid;
-	border-right: 2px #e0e0e0 solid;
-	border-bottom: 2px #e0e0e0 solid;
-	border-radius: 0px 10px 10px 0px;
-	margin-left: -18px;
-	padding-left: 28px;
-}
-.fa-heart
-{
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 12px;
-	background-color: #DEEBFF;
-	border-radius: 50%;
-}
-
-#title_logdisp
-{
-	display: flex;
-	justify-content: flex-start;
-	
-	margin-top: 10px;
-	margin-bottom: 15px;
-}
-.fa-info
-{
-	background-color: white;
-	border-radius: 10px 10px 10px 10px;
-	margin-right: 5px;
-	border-style: 1px solid grey;
-}
-.titlelog
-{
-	font-size: 13px;
-}
-
-#blochotels /* hébergements et les plus populaires*/
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
-	height: 42%;
-}
-#hebergements_Marseille
-{
-	display: flex;
-	flex-direction: column;
-	background-color: #F2F2F2;
-	width: 70%;
-	border-radius: 0px 10px 10px 0px;
-}
-.intitule
-{
-	margin-left: 25px;
-}
-#hotels_images
-{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-}
-p
-{
-	font-size: 12px;
-}
-
-img
-{
-	border-radius: 10px 10px 0px 0px;
-}
-.image
-{
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px;
-	margin-bottom: 12px;
-	border-radius: 10px 10px 10px 10px;
-	padding: 5px;
-	background-color: white;
-}
-
-#nav
-{
-	margin-top: 15px;
-	margin-left: 40px;
-	margin-bottom: 20px;
-}
-#populaire
-{
-	display: flex;
-	flex-direction: column;
-	background-color: #F2F2F2;
-	width: 28%;
-	border-radius: 10px 0px 0px 10px;
-	margin-left: 20px;
-}
-#title_logo
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.fa-chart-line
-{
-	font-size: 25px;
-	margin-right: 20px;
-	margin-top: 20px;
-}
-.text
-{
-	margin-left: 20px;
-}
-#images_pop
-{
-	display: flex;
-	flex-direction: column;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	
-}
-.flotte
-{
-	float: left;
-}
-#eau
-{
-	display: flex;
-	flex-direction: row;
-	background-color: white;
-	width: 90%;
-	height: 25%;
-	margin-left: 5px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	border-radius: 10px 10px 10px 10px;
-}
-.im
-{
-	margin-left: 5px;
-	border-radius: 10px 0px 0px 10px
-}
-.legende
-{
-	margin-left: 5px;
-	padding-top: 15px;
-}
-#bleu
-{
-	display: flex;
-	background-color: white;
-	flex-direction: row;
-	width: 90%;
-	height: 25%;
-	margin-left: 5px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	border-radius: 10px 10px 10px 10px;
-}
-#soleil
-{
-	display: flex;
-	flex-direction: row;
-	background-color: white;
-	width: 90%;
-	height: 25%;
-	margin-left: 5px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-radius: 10px 10px 10px 10px;
-}
-
-#blocactivites /*activités à Marseille */
-{
-	display: flex;
-	flex-direction: column;
-	margin-top: 20px;
-	height: 30%;
-}
-#image_activites
-{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-.port
-{
-	margin-left: 15px;
-	margin-right: 18px;
-	
-}
-.iles
-{
-	margin-left: 18px;
-	margin-right: 18px;
-	
-}
-.parc
-{
-	margin-left: 18px;
-	margin-right: 18px;
-	
-}
-.dame
-{
-	margin-left: 18px;
-	margin-right: 15px;
-	
-}
-aside
-{
-	border-radius: 10px 10px 10px 10px;
-	background-color: white;
-	box-shadow: 0px 0px 5px 5px lightgrey;
-	padding: 8px;
-	font-weight: bold;
-	margin-bottom: 30px;
-}
-
-#blocfooter
-{
-	display: flex;
-	flex-direction: row;
-	background-color: #F2F2F2;
-	justify-content: space-between;
-	height: 20%;
-}
-.assist
-{
-	margin-right: 20%;
-	list-style-type: none;
-	font-size: 12px;
-}
-.Nos_heb
-{
-	list-style-type: none;
-	font-size: 12px;
-}
-.a_propos
-{
-	font-size: 12px;
-	list-style-type: none;
 }
