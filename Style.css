@@ -14,19 +14,26 @@
 	font-weight: normal;
 	font-style: italic;
 }
-
+@font-face /*charger la police applicable au site */
+{
+	font-family: 'raleway';
+	src: url('Raleway-Bold.ttf'); 
+	font-weight: normal;
+	font-style: bold;
+}
 /* MISE EN FORME POUR LAPTOP */
 
 body
 {
 	font-family:'Raleway';
-	font-style: normal;
+	font-style: bold;
+	margin-left: 20px;
 }
 
 
 header
 {
-	height: 35%
+	height: 35%;
 }
 
 /* bloc1 - position logo + menu */
@@ -101,15 +108,16 @@ nav li /*donne l'écartement entre chaque mot de liste */
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.title
+.title_main
 {
-	font-weight: bold;
-	font-size: 1,7em;
+	font-size: 20px;
+	margin-left: 0px;
 }
 .soustitre
 {
 	font-size: 13px;
 	margin-bottom: 10px;
+	font-style: normal;
 }
 
 #blocrecherche /* champs de recherche */
@@ -180,7 +188,7 @@ i
 	font-size: 90%;
 	padding: 2px;
 }
-#Filtres
+.Filtres
 {
 	padding: 10px;
 	margin-top: 15px;
@@ -188,7 +196,7 @@ i
 	margin-right: 15px;
 }
 
-#champs_filtre /* bloc catégorie */
+.champs_filtre /* bloc catégorie */
 {
 	display: flex;
 	flex-direction: row;
@@ -221,7 +229,7 @@ i
 	background-color: #DEEBFF;
 	border-radius: 50%;
 }
-#champs_filtre:hover
+.champs_filtre:hover
 {
 	background-color: lightyellow;
 }
@@ -303,12 +311,12 @@ fa-info-circle
 	height: 52%;
 	border-radius: 10px 10px 10px 10px;
 }
-#title
+.title
 {
 	margin-left: 25px;
 	font-weight: bold;
 }
-#photo
+.photo
 {
 	display: flex;
 	flex-direction: row;
@@ -319,16 +327,16 @@ fa-info-circle
 	margin-right: 10px;
 	width: 95%;
 }
-#image
+.image
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: top;
 	border-radius: 10px 10px 10px 10px;
 	background-color: white;
-	width: 30%
+	width: 30%;
 }
-#image img
+.image img
 {
 	border-radius: 10px 10px 0px 0px;
 	object-fit: cover;
@@ -337,12 +345,12 @@ fa-info-circle
 	padding-left: 5px;
 	padding-top: 3px;
 }
-#legende
+.legende
 {
 	justify-content: space-between;
 	align-items: baseline;
 }
-#image a
+.image a
 {
 	text-decoration: none;
 }
@@ -366,6 +374,7 @@ p
 	padding-top: 1px;
 	padding-left: 3px;
 	font-size: 10px;
+	font-style: normal;
 }
 .star
 {
@@ -377,23 +386,23 @@ p
 	flex-direction: column;
 	background-color: #F2F2F2;
 	width: 28%;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 10px 10px 10px;
 	margin-left: 20px;
 }
-#title
+.title
 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-#title i
+.title i
 {
 	color: black;
 	font-size: 25px;
 	margin-top: 15px;
 	margin-right: 10px;
 }
-#photos
+.photos
 {
 	flex-flow: row;
 	width: 85%;
@@ -403,30 +412,29 @@ p
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
-#photo_pop
+.photo_pop
 {
 	width: 35%;
 }
-#photo_pop img
+.photo_pop img
 {
 	width: 100%;
 	height: 140px;
 	border-radius: 10px 0px 0px 10px;
+	object-fit: cover;
 }
 .flotte
 {
 	float: left;
 	margin-bottom: 2px;
+	width: 100%;
 }
-#photos a
+.photos a
 {
 	text-decoration: none;
 }
-#legende
-{
-	width: 70%;
-}
-#legende_pop
+
+.legende_pop
 {
 	margin-top: 15px;
 }
@@ -436,15 +444,14 @@ p
 	font-size: 11px;
 }
 
-
 #blocactivites /*activités à Marseille */
 {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
 	margin-bottom: 10px;
-	width: 100%
-	height: 40%;
+	width: 100%;
+	height: 80%;
 }
 #vues_activites /* Bloc contenant les vues de Marseille*/
 {
@@ -452,8 +459,9 @@ p
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
+	object-fit: cover;
 }
-#vue /* bloc inclus dans vues_activités et contenant les deux gdes images*/
+.vue /* bloc inclus dans vues_activités et contenant les deux gdes images*/
 {
 	display: flex;
 	flex-direction: column;
@@ -473,7 +481,7 @@ p
 	height: 268px;
 	border-radius: 10px 10px 0px 0px;
 }
-#double_vue /* Bloc inclus dans vues_activitées et contenant les 4 petites images */
+.double_vue /* Bloc inclus dans vues_activitées et contenant les 4 petites images */
 {
 	display: flex;
 	flex-direction: column;
@@ -507,7 +515,15 @@ h5
 	background-color: #F2F2F2;
 	justify-content: space-between;
 	margin-top: 15px;
-	height: 20%;
+	height: 40%;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+menu
+{
+	list-style-type: none;
+	padding-left: 0px;
 }
 .assist
 {
@@ -528,9 +544,21 @@ h5
 	list-style-type: none;
 	margin-top: 15px;
 }
-
-
-
+.a_propos h4
+{
+	padding-bottom: 5px;
+	padding-left: 1px;
+}
+.Nos_heb h4
+{ 
+	padding-bottom: 5px;
+	padding-left: 1px;
+}
+.assist h4
+{
+	padding-bottom: 5px;
+	padding-left: 1px;
+}
 
 
 
@@ -547,6 +575,8 @@ h5
 	{
 		width: auto;
 		margin-top: 60px;
+		margin-left: 5px;
+		margin-right: 15px;
 	}
 	#bloclogo
 	{
@@ -618,7 +648,7 @@ h5
 	{
 		margin-left: 15px;
 	}
-	#recherche
+	.recherche
 	{
 		display: flex;
 		justify-content: flex-start;
@@ -646,7 +676,7 @@ h5
 	.text_recherche:nth-child(1)
 	{
 		z-index: 121;
-		visibility: hidden;
+		display: none;
 		order: 2;
 
 	}
@@ -657,19 +687,19 @@ h5
 		margin-left: 15px;
 		width: 80%;
 	}
-	#filtres
+	.filtres
 	{
 		margin-bottom: 2px;
 		margin-left: 2px;
 		margin-right: 100px;
 	}
 	
-	#champs_filtre
+	.champs_filtre
 	{
 		justify-content: flex-start;
 		font-weight: bold;
 		margin-left: 2px;
-		margin-bottom :3px;
+		margin-bottom: 3px;
 		margin-top: 3px;
 	}
 	.title_filtre
@@ -677,10 +707,11 @@ h5
 		font-size: 13px;
 	}
 	
-	#title_logdisp
+	.title_logdisp
 	{
 		flex-flow: row;
-		width: 330px;
+		align-items: flex-start;
+		width: 300px;
 		margin-left: 15px;
 	}
 	.titlelog
@@ -688,10 +719,7 @@ h5
 		padding-left: 2px;
 		font-size: 13px;
 	}
-	fa-info-circle
-	{
-		padding-bottom: 15px;
-	}
+	
 
 	/* PARTIE DU CODE RE ECRIT*/
 	#bloc_central
@@ -708,9 +736,20 @@ h5
 	}
 	h4
 	{
-		
 		font-size: 14px;
 		color: black;
+	}
+	.title h3
+	{
+		margin-bottom: 0px;
+	}
+	.image
+	{
+		width: 95%;
+		margin-left: 15px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		box-shadow: 0px 0px 4px 4px lightgrey;
 	}
 	#photo
 	{
@@ -718,6 +757,9 @@ h5
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 5px;
 
 	}
 	.image img
@@ -730,8 +772,13 @@ h5
 	#affichez
 	{
 		background-color: none;
-		font-size: 13px;
+		font-size: 20px;
 		margin-left: 10px;
+	}
+	#affichez h6
+	{
+		margin-left: 2px;
+		margin-bottom: 2px;
 	}
 	#populaire:nth-child(2)
 	{
@@ -739,15 +786,13 @@ h5
 		background-color: #F2F2F2;
 		margin-top: 20px;
 		margin-bottom: 20px;
-		margin-right: 5px;
-		margin-left: 10px;
 		width: 92%;
 		order: 1;
 		border-radius: 0px 0px 0px 0px;
 	}
-	#title
+	.title
 	{
-		margin-left: 3px;
+		margin-left: 15px;
 		flex-flow: row;
 		font-size: 16px;
 	}
@@ -768,7 +813,7 @@ h5
 		margin-left: 10px;
 		width: 92%;
 	}
-	#legende_pop
+	.legende_pop
 	{
 		padding-left: 5px;
 	}
@@ -795,7 +840,7 @@ h5
 		margin-left: 8px;
 		width: 100%;
 	}
-	#vue
+	.vue
 	{
 		width: 95%;
 		object-fit: cover;
@@ -806,7 +851,7 @@ h5
 		height: 140px;
 		width: 100%;
 	}
-	#double_vue
+	.double_vue
 	{
 		width: 95%;
 		object-fit: cover;
