@@ -15,7 +15,6 @@
 	font-style: italic;
 }
 
-
 /* MISE EN FORME POUR LAPTOP */
 
 body
@@ -260,7 +259,6 @@ i
 #title_logdisp
 {
 	display: flex;
-	
 	align-items: center;
 	width: 45%;
 	margin-top: 10px;
@@ -268,14 +266,15 @@ i
 }
 .fa fa-info-circle
 {
-	background-color: white;
 	border-radius: 50%;
 	margin-right: 5px;
 	border-style: 1px solid grey;
+	
 }
 fa-info-circle
 {
 	color: #0065FC;
+	background-color: white;
 }
 .titlelog
 {
@@ -531,18 +530,29 @@ h5
 }
 
 
-/* CODE POUR LA VERSION IPHONE*/
+
+
+
+
+
+
+
+
+/* VERSION POUR IPHONE */
 
 @media all and (max-device-width: 480px)
 {
+	
 	#bloc_page
 	{
 		width: auto;
+		margin-top: 60px;
 	}
 	#bloclogo
 	{
 		flex-flow: row wrap;
 		width: 90%;
+		margin-left: 15px;
 	}
 	.logo:nth-child(1)
 	{
@@ -579,22 +589,34 @@ h5
 		z-index: auto;
 		border-bottom: 5px solid #e0e0e0;
 	}
-	
+	.ancre_act nav
+	{
+		padding-left: 30px;
+	}
 	.inscrire:nth-child(3)
 	{
 		order: 2;
 		flex: 1;
+		margin-left: 100px;
+	}
+	.incrire 
+	{
+		padding-left: 30px;
 	}
 		
-	
 	#bloctitre
 	{
 		flex-wrap: wrap;
 		font-size: 18px;
+		margin-left: 15px;
 	}
 	.soustitre
 	{
 		margin-top: 5px;
+	}
+	#blocrecherche
+	{
+		margin-left: 15px;
 	}
 	#recherche
 	{
@@ -617,6 +639,7 @@ h5
 	i
 	{
 		padding-top: 4px;
+		padding-right: 8px;
 		font-color: #0065FC;
 	}
 
@@ -631,12 +654,14 @@ h5
 	{
 		flex-flow: row wrap;
 		justify-content: left;
+		margin-left: 15px;
+		width: 80%;
 	}
 	#filtres
 	{
 		margin-bottom: 2px;
 		margin-left: 2px;
-		
+		margin-right: 100px;
 	}
 	
 	#champs_filtre
@@ -655,19 +680,26 @@ h5
 	#title_logdisp
 	{
 		flex-flow: row;
-		width: 300px;
+		width: 330px;
+		margin-left: 15px;
 	}
 	.titlelog
 	{
 		padding-left: 2px;
 		font-size: 13px;
 	}
-	#blochotels /* hebergements et les plus populaires */
+	fa-info-circle
+	{
+		padding-bottom: 15px;
+	}
+
+	/* PARTIE DU CODE RE ECRIT*/
+	#bloc_central
 	{
 		flex-flow : column wrap;
 		background-color: white;
 	}
-	#hebergements_Marseille:nth-child(1)
+	#hebergements:nth-child(1)
 	{
 		flex-flow: column;
 		background-color: white;
@@ -680,21 +712,22 @@ h5
 		font-size: 14px;
 		color: black;
 	}
-	#hotels_images
+	#photo
 	{
 		background-color: white;
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 
 	}
-	.image
+	.image img
 	{
 		box-shadow: 0px 0px 2px 2px #e0e0e0;
 		background-color: white;
 		margin-left: 5px;
-		width: 80%;
 	}
 
-	#nav
+	#affichez
 	{
 		background-color: none;
 		font-size: 13px;
@@ -710,8 +743,9 @@ h5
 		margin-left: 10px;
 		width: 92%;
 		order: 1;
+		border-radius: 0px 0px 0px 0px;
 	}
-	#title_logo
+	#title
 	{
 		margin-left: 3px;
 		flex-flow: row;
@@ -729,14 +763,18 @@ h5
 		height: 120px;
 		border-radius: 10px 0px 0px 10px;
 	}
-	#images_pop
+	#photos
 	{
 		margin-left: 10px;
+		width: 92%;
 	}
-	.legende p
+	#legende_pop
 	{
-		
-		padding-right: 5px;
+		padding-left: 5px;
+	}
+	.flotte
+	{
+		margin-right: 5px;
 	}
 
 	#image_activites /* bloc 5 - activités à Marseille */
@@ -747,19 +785,37 @@ h5
 	}
 	#title_act 
 	{
-		margin-left: 25px;
+		margin-left: 10px;
+		font-weight: bold;
 	}
-	aside
+	#vues_activites
 	{
-		padding-left: 0px;
-		padding-right: 0px;
+		display: flex;
+		flex-direction: column;
+		margin-left: 8px;
+		width: 100%;
 	}
-	.im_activites img
+	#vue
 	{
-		padding-left: 10px;
-		padding-right: 10px;
-		height: 140px;
 		width: 95%;
+		object-fit: cover;
+	}
+	.vue_gde img
+	{
+		border-radius: 10px 10px 0px 0px;
+		height: 140px;
+		width: 100%;
+	}
+	#double_vue
+	{
+		width: 95%;
+		object-fit: cover;
+	}
+	.ptte_vue img
+	{
+		border-radius: 10px 10px 0px 0px;
+		height: 140px;
+		width: 100%;
 	}
 	
 	#blocfooter  /* Bloc 6 footer */
@@ -781,4 +837,3 @@ h5
 	{
 		padding-left: 15px;
 	}
-}
