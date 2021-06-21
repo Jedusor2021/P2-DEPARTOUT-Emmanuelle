@@ -2,7 +2,7 @@
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'raleway';
-	src: url('Raleway-VariableFont_wght.ttf');
+	src: url('Polices/Raleway-VariableFont_wght.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -10,23 +10,23 @@
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'raleway';
-	src: url('Raleway-Italic-VariableFont_wght.ttf'); 
+	src: url('Polices/Raleway-Italic-VariableFont_wght.ttf'); 
 	font-weight: normal;
 	font-style: italic;
 }
 @font-face /*charger la police applicable au site */
 {
 	font-family: 'raleway';
-	src: url('Raleway-Bold.ttf'); 
-	font-weight: normal;
-	font-style: bold;
+	src: url('Polices/Raleway-Bold.ttf'); 
+	font-weight: bold;
+	font-style: normal;
 }
 /* MISE EN FORME POUR LAPTOP */
 
 body
 {
 	font-family:'Raleway';
-	font-style: bold;
+	font-style: normal;
 	margin-left: 20px;
 }
 
@@ -495,7 +495,7 @@ p
 	box-shadow: 2px 2px 2px 2px lightgrey;
 	border-radius: 10px 10px 10px 10px;
 	margin-bottom: 20px;
-	object-fit: cover;
+
 }
 
 .ptte_vue img
@@ -503,6 +503,7 @@ p
 	width: 100%;
 	height: 90px;
 	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
 }
 h5
 {
