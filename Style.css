@@ -56,14 +56,7 @@ header
 	margin-left: auto;
 	
 }
-.ancre_heb a
-{
-	color: #0065FC;
-}
-.ancre_act a
-{
-	color: black;
-}
+
 .inscrire
 {
 	display: flex;
@@ -75,7 +68,7 @@ nav ul /*structure des ancres*/
 {
 	list-style-type: none;
 	display: flex;
-	flex-direction: line;
+	flex-direction: row;
 	font-size: 13px;
 	font-weight: bold;
 	justify-content: flex-end;
@@ -85,21 +78,36 @@ nav li /*donne l'écartement entre chaque mot de liste */
 {
 	margin-left: 28px
 }
-.ancre_heb a
+.trait
 {
+	border-bottom-color: #FFFFFF;
+	margin-bottom: 5px;
+}
+.ancre_heb
+{
+	color: #0065FC;
 	transition: color 1s;
 }
-.ancre_heb a:hover
+.ancre_heb:hover
 {
-	color: red;
+	border-bottom-color: #99E2D0;
+	color: #00E2D0;
+}
+.ancre_heb a
+{
+	text-decoration: none;
+	
 }
 .ancre_act a
 {
 	transition: color 1s;
+	color: #000000;
+	text-decoration: none;
 }
 .ancre_act a:hover
 {
-	color: red;
+	color: #99E2D0;
+	text-decoration: overline;
 }
 #bloctitre /* Titre et paragraphe sous le logo */
 {
@@ -113,6 +121,7 @@ nav li /*donne l'écartement entre chaque mot de liste */
 	font-size: 20px;
 	margin-left: 0px;
 }
+
 .soustitre
 {
 	font-size: 13px;
@@ -156,16 +165,16 @@ nav li /*donne l'écartement entre chaque mot de liste */
 i
 {
 	padding: 4px;
-	font-color: black;
+	font-color: #000000;
 }
 .zone_recherche
 {
 	border-radius: 0px 10px 10px 0px;
-	border-color: 1px solid #e0e0e0;
+	
 }
 .icone_recherche
 {
-	color: white;
+	color: #FFFFFF;
 }
 .champ
 {
@@ -276,13 +285,13 @@ i
 {
 	border-radius: 50%;
 	margin-right: 5px;
-	border-style: 1px solid grey;
+	
 	
 }
 fa-info-circle
 {
 	color: #0065FC;
-	background-color: white;
+	background-color: #FFFFFF;
 }
 .titlelog
 {
@@ -331,9 +340,8 @@ fa-info-circle
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: top;
 	border-radius: 10px 10px 10px 10px;
-	background-color: white;
+	background-color: #FFFFFF;
 	width: 30%;
 }
 .image img
@@ -356,7 +364,7 @@ fa-info-circle
 }
 h4 
 {
-	color: black;
+	color: #000000;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 1px;
@@ -369,7 +377,7 @@ h6
 }
 p
 {
-	color: black;
+	color: #000000;
 	margin-top: 0px;
 	padding-top: 1px;
 	padding-left: 3px;
@@ -397,7 +405,7 @@ p
 }
 .title i
 {
-	color: black;
+	color: #000000;
 	font-size: 25px;
 	margin-top: 15px;
 	margin-right: 10px;
@@ -406,7 +414,7 @@ p
 {
 	flex-flow: row;
 	width: 85%;
-	background-color: white;
+	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
 	margin-left: 30px;
 	margin-bottom: 10px;
@@ -465,7 +473,7 @@ p
 {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
+	background-color: #FFFFFF;
 	width: 22%;
 	object-fit: cover;
 }
@@ -486,7 +494,7 @@ p
 {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
+	background-color: white#FFFFFF;
 	width: 22%;
 	object-fit: cover;
 }
@@ -673,7 +681,7 @@ menu
 	{
 		padding-top: 4px;
 		padding-right: 8px;
-		font-color: #0065FC;
+		
 	}
 
 	.text_recherche:nth-child(1)
@@ -728,19 +736,19 @@ menu
 	#bloc_central
 	{
 		flex-flow : column wrap;
-		background-color: white;
+		background-color: #FFFFFF;
 	}
 	#hebergements:nth-child(1)
 	{
 		flex-flow: column;
-		background-color: white;
+		background-color: #FFFFFF;
 		order: 2;
 		width: 100%;
 	}
 	h4
 	{
 		font-size: 14px;
-		color: black;
+		color: #000000;
 	}
 	.title h3
 	{
@@ -756,7 +764,7 @@ menu
 	}
 	#photo
 	{
-		background-color: white;
+		background-color: #FFFFFF;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -768,13 +776,13 @@ menu
 	.image img
 	{
 		box-shadow: 0px 0px 2px 2px #e0e0e0;
-		background-color: white;
+		background-color: #FFFFFF;
 		margin-left: 5px;
 	}
 
 	#affichez
 	{
-		background-color: none;
+		background-color: #FFFFFF;
 		font-size: 20px;
 		margin-left: 10px;
 	}
