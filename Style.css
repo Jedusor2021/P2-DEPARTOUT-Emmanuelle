@@ -56,10 +56,22 @@ header
 	flex-direction: row;
 	margin-left: auto;
 }
+.ancre_heb:hover
+{
+	border-top: 3px solid #99E2D0;
+}
 .heb a
 {
 	text-decoration: none;
 	color: #0065FC;
+}
+.heb a:hover
+{
+	color: #99E2D0;
+}
+.ancre_act:hover
+{
+	border-top: 3px solid #99E2D0;
 }
 .act a
 {
@@ -69,14 +81,7 @@ header
 .act a:hover
 {
 	color: #99E2D0;
-	text-decoration: overline;
 }
-.heb a:hover
-{
-	color: #99E2D0;
-	text-decoration: overline;
-}
-
 .inscrire a
 {
 	display: flex;
@@ -571,7 +576,7 @@ menu
 
 /* VERSION POUR IPHONE */
 
-@media all and (max-device-width: 1024px)
+@media all and (max-device-width: 700px)
 {
 	
 	#bloc_page
@@ -612,7 +617,15 @@ menu
 		border-bottom: 5px solid #e0e0e0;
 		justify-content: center;
 	}
-
+	.ancre_heb:hover
+	{
+		border-bottom: #0065FC 5px solid;
+		border-top: #FFFFFF;
+	}
+	.heb a:hover
+	{
+		color: #99E2D0;
+	}
 	.ancre_act
 	{
 		box-sizing: content-box;
@@ -625,6 +638,15 @@ menu
 		z-index: auto;
 		border-bottom: 5px solid #e0e0e0;
 		justify-content: center;
+	}
+	.ancre_act:hover
+	{
+		border-bottom: #0065FC 5px solid;
+		border-top: #FFFFFF;
+	}
+	.act a:hover
+	{
+		color: #99E2D0;
 	}
 	.ancre_act nav
 	{
@@ -694,7 +716,7 @@ menu
 	{
 		margin-bottom: 2px;
 		margin-left: 2px;
-		margin-right: 20px;
+		margin-right: 200px;
 	}
 	
 	.champs_filtre
