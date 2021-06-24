@@ -21,6 +21,11 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+
+
+
+
 /* MISE EN FORME POUR LAPTOP */
 
 body
@@ -64,6 +69,7 @@ header
 {
 	text-decoration: none;
 	color: #0065FC;
+	padding-right: 25px;
 }
 .heb a:hover
 {
@@ -77,6 +83,7 @@ header
 {
 	text-decoration: none;
 	color: #000000;
+	padding-right: 25px;
 }
 .act a:hover
 {
@@ -181,11 +188,11 @@ i
 #blocfiltre /* filtres */
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	margin-right: 5%;
 	margin-bottom: 20px;
-	width: 55%;
+	width: 100%;
 }
 .fa
 {
@@ -196,10 +203,11 @@ i
 }
 .Filtres
 {
-	padding: 10px;
+	padding: 15px;
 	margin-top: 15px;
 	font-weight: bold;
 	margin-right: 200px;
+
 }
 
 .champs_filtre /* bloc catégorie */
@@ -307,14 +315,13 @@ fa-info-circle
 	width: 100%;
 	height: 42%;
 }
-#hebergements
+.hebergements
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	width: 70%;
-	height: 52%;
 	border-radius: 10px 10px 10px 10px;
 }
 .title
@@ -366,6 +373,7 @@ h4
 	margin-bottom: 0px;
 	padding-top: 1px;
 	padding-left: 3px;
+	font-size: 15px;
 }
 h6
 {
@@ -385,7 +393,7 @@ p
 {
 	font-size: 11px;
 }
-#populaire /* CONTAINER DROIT */
+.populaire /* CONTAINER DROIT */
 {
 	display: flex;
 	flex-direction: column;
@@ -411,20 +419,21 @@ p
 {
 	flex-flow: row;
 	width: 85%;
+	height: 140px;
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
-	margin-left: 30px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .photo_pop
 {
-	width: 35%;
+	width: 30%;
 }
 .photo_pop img
 {
-	width: 100%;
-	height: 140px;
+	width: 90%;
+	height: 135px;
 	border-radius: 10px 0px 0px 10px;
 	object-fit: cover;
 }
@@ -464,7 +473,7 @@ p
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	object-fit: cover;
+	
 }
 .vue /* bloc inclus dans vues_activités et contenant les deux gdes images*/
 {
@@ -472,34 +481,36 @@ p
 	flex-direction: column;
 	background-color: #FFFFFF;
 	width: 22%;
-	object-fit: cover;
+	
 }
 .vue_gde
 {
 	box-shadow: 2px 2px 2px 2px lightgrey;
 	border-radius: 10px 10px 10px 10px;
 	margin-bottom: 10px;
-	object-fit: cover;
+	
 }
 .vue_gde img
 {
 	width: 100%;
 	height: 268px;
 	border-radius: 10px 10px 0px 0px;
+	object-fit: cover;
 }
 .double_vue /* Bloc inclus dans vues_activitées et contenant les 4 petites images */
 {
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 	background-color: #FFFFFF;
 	width: 22%;
-	object-fit: cover;
+	
 }
 .ptte_vue
 {
 	box-shadow: 2px 2px 2px 2px lightgrey;
 	border-radius: 10px 10px 10px 10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 }
 
@@ -567,6 +578,53 @@ menu
 	padding-bottom: 5px;
 	padding-left: 1px;
 }
+}
+
+
+/* VERSION POUR IPAD**/
+@media all and (min-width: 701px) and (max-width: 1024px)
+{
+#bloc_central
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.hebergements
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.populaire
+{
+	width: 100%;
+}
+.bloc_photos
+{
+	display: flex;
+	flex-direction: row;
+}
+.photos
+{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+.photos img
+{
+	object-fit: cover;
+	width: 100%;
+}
+h3
+{
+	font-size: 15px;
+}
+h4
+{
+	font-size: 10px;
+}
+}
+
 
 
 
@@ -576,7 +634,7 @@ menu
 
 /* VERSION POUR IPHONE */
 
-@media all and (max-device-width: 700px)
+@media all and (max-width: 700px)
 {
 	
 	#bloc_page
@@ -751,7 +809,7 @@ menu
 		flex-flow : column wrap;
 		background-color: #FFFFFF;
 	}
-	#hebergements:nth-child(1)
+	.hebergements:nth-child(1)
 	{
 		display: flex;
 		flex-flow: column;
@@ -810,7 +868,7 @@ menu
 		margin-left: 2px;
 		margin-bottom: 2px;
 	}
-	#populaire:nth-child(2)
+	.populaire:nth-child(2)
 	{
 		display: flex;
 		flex-flow: column;
@@ -917,4 +975,7 @@ menu
 	.assist
 	{
 		padding-left: 15px;
+	}	
 	}
+
+
