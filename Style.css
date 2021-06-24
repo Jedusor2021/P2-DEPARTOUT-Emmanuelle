@@ -730,7 +730,7 @@ menu
 		
 	}
 	
-	.champs_filtre:
+	.champs_filtre
 	{
 		justify-content: flex-start;
 		font-weight: bold;
@@ -936,4 +936,4 @@ menu
 	{
 		padding-left: 15px;
 	}	
-	
+	}
