@@ -46,7 +46,7 @@ header
 {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	
 	
 }
 .logo
@@ -324,6 +324,7 @@ fa-info-circle
 	width: 70%;
 	border-radius: 10px 10px 10px 10px;
 }
+
 .title
 {
 	margin-left: 25px;
@@ -352,10 +353,8 @@ fa-info-circle
 {
 	border-radius: 10px 10px 0px 0px;
 	object-fit: cover;
-	width: 96%;
+	width: 100%;
 	height: 140px;
-	padding-left: 5px;
-	padding-top: 3px;
 }
 .legende
 {
@@ -373,7 +372,7 @@ h4
 	margin-bottom: 0px;
 	padding-top: 1px;
 	padding-left: 3px;
-	font-size: 15px;
+	font-size: 13px;
 }
 h6
 {
@@ -419,21 +418,22 @@ p
 {
 	flex-flow: row;
 	width: 85%;
-	height: 140px;
+	height: 100px;
 	background-color: #FFFFFF;
 	border-radius: 10px 10px 10px 10px;
 	margin-left: 20px;
-	margin-bottom: 20px;
-	margin-top: 20px;
+	margin-bottom: 25px;
+	margin-top: 25px;
 }
 .photo_pop
 {
-	width: 30%;
+	width: 40%;
+	max-height: 100px;
 }
 .photo_pop img
 {
 	width: 90%;
-	height: 135px;
+	height: 100px;
 	border-radius: 10px 0px 0px 10px;
 	object-fit: cover;
 }
@@ -454,8 +454,8 @@ p
 }
 .stars
 {
-	margin-top: 65px;
-	font-size: 11px;
+	margin-top: 25px;
+	font-size: 10px;
 }
 
 #blocactivites /*activités à Marseille */
@@ -481,14 +481,11 @@ p
 	flex-direction: column;
 	background-color: #FFFFFF;
 	width: 22%;
-	
 }
 .vue_gde
 {
 	box-shadow: 2px 2px 2px 2px lightgrey;
 	border-radius: 10px 10px 10px 10px;
-	
-	
 }
 .vue_gde img
 {
@@ -510,8 +507,8 @@ p
 .ptte_vue
 {
 	box-shadow: 2px 2px 2px 2px lightgrey;
-	border-radius: 10px 10px 10px 10px;
-	margin-bottom: 10px;
+	border-radius: 10px;
+	margin-bottom: 12px;
 
 }
 
@@ -586,12 +583,12 @@ menu
 
 /* VERSION POUR IPHONE */
 
-@media all and (max-width: 769px)
+@media all and (max-width: 767px)
 {
 	
 	#bloc_page
 	{
-		width: auto;
+		width: 	100%;
 		margin-top: 60px;
 		margin-left: 5px;
 		margin-right: 15px;
@@ -600,8 +597,8 @@ menu
 	{
 		display: flex;
 		flex-flow: row wrap;
-		width: 90%;
-		margin-left: 15px;
+		width: 100%;
+		
 	}
 	.logo:nth-child(1)
 	{
@@ -613,7 +610,7 @@ menu
 		order: 3;
 		flex: 2;
 		margin-left: 0px;
-		width: 100%;
+		
 	}
 	.ancre_heb
 	{
@@ -668,7 +665,6 @@ menu
 		order: 2;
 		flex: 3;
 	}
-	
 	#bloctitre
 	{
 		flex-wrap: wrap;
@@ -713,7 +709,6 @@ menu
 		z-index: 121;
 		display: none;
 		order: 2;
-
 	}
 	#blocfiltre
 	{
@@ -917,7 +912,7 @@ menu
 		object-fit: cover;
 	}
 	
-	#blocfooter  /* Bloc 6 footer */
+	.blocfooter  /* Bloc 6 footer */
 	{
 		display: flex;
 		flex-flow: column wrap;
@@ -925,12 +920,12 @@ menu
 	
 	.a_propos
 	{ 
-		padding-left: 15px;
+		padding-left: 5px;
 	 }
 	.Nos_heb
 	{
 		padding-left: 15px;
-		padding-right: 180px;
+		padding-right: 20px;
 	}
 	.assist
 	{
